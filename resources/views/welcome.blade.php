@@ -30,7 +30,7 @@
         </nav>
     </header>
     <main class="text-center h-full flex flex-col justify-center -mt-36">
-        <h1 class="text-6xl font-bold mb-4 text-white">Je suis votre future</h1>
+        <h1 class="text-6xl font-bold mb-4 text-white">Je suis votre futur</h1>
         <h1 class="text-6xl font-bold mb-4 text-white">développeur informatique</h1>
         <p class="mb-8">Vous recherchez un alternant ? </p>
         <div class="space-x-4">
