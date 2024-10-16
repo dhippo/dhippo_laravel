@@ -18,7 +18,7 @@
 <div class="flex flex-col items-center justify-between h-screen text-white">
     <header class="flex justify-between w-full pt-2 pl-6 pr-6 pb-6">
         <div class="flex items-center">
-            <img src="{{ asset('logos/gggithub.png') }}" alt="DevRos logo" class="w-12 h-12">
+            <img src="{{ asset('logos/gggithub.png') }}" alt="DevRos logo" class="w-10 h-10">
             <span class="text-xl font-bold ml-4">dhippo</span>
         </div>
         <nav class=" flex items-center">
@@ -26,6 +26,7 @@
         </nav>
     </header>
     <main class="text-center h-full flex flex-col justify-center -mt-36">
+        <h1 class="text-5xl font-bold mb-4 text-white">Hippolyte DURAND-TESSE</h1>
         <h1 class="text-6xl font-bold mb-4 text-white">Data & Software Engineer</h1>
 
         <p class="mb-8">Looking for a way to contact me?</p>
