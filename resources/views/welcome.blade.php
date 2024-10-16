@@ -16,31 +16,27 @@
 </head>
 <body class="bg-myblack" style="font-family: 'Poppins', sans-serif;">
 <div class="flex flex-col items-center justify-between h-screen text-white">
-    <header class="flex justify-between w-full pl-6 pr-6 pb-6">
+    <header class="flex justify-between w-full pt-2 pl-6 pr-6 pb-6">
         <div class="flex items-center">
             <img src="{{ asset('logos/gggithub.png') }}" alt="DevRos logo" class="w-12 h-12">
             <span class="text-xl font-bold ml-4">dhippo</span>
         </div>
         <nav class=" flex items-center">
-            <a href="#" class="text-white p-2 underline">Accueil</a>
-            <a href="#" class="text-white p-2 hover:underline">Projets</a>
-            <a href="#" class="text-white p-2 hover:underline">Parcours</a>
-            <a href="#" class="text-white p-2 hover:underline">Idées</a>
-            <a href="/contact" class="text-white p-2 hover:underline">Contact</a>
+            <a href="#" class="text-white p-2 underline">Build the future</a>
         </nav>
     </header>
     <main class="text-center h-full flex flex-col justify-center -mt-36">
-        <h1 class="text-6xl font-bold mb-4 text-white">Je suis votre futur</h1>
-        <h1 class="text-6xl font-bold mb-4 text-white">développeur informatique</h1>
-        <p class="mb-8">Vous recherchez un alternant ? </p>
+        <h1 class="text-6xl font-bold mb-4 text-white">Data & Software Engineer</h1>
+
+        <p class="mb-8">Looking for a way to contact me?</p>
         <div class="space-x-4">
-            <a href="#" class="bg-myblue hover:bg-myblue3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Portfolio</a>
-            <a href="/contact" class="bg-transparent hover:bg-myblue2 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full">Contactez-moi</a>
+            <a href="#" class="bg-myblue hover:bg-myblue3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Career path</a>
+            <a href="#" class="bg-transparent hover:bg-myblue2 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full">Email</a>
         </div>
     </main>
 </div>
 <footer class="absolute bottom-0 w-full text-center text-white p-4">
-    <span>© 2022 Tous droits réservés.</span>
+    <span>© 2024 All rights reserved.</span>
 </footer>
 </body>
 </html>
