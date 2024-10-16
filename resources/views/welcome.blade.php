@@ -18,8 +18,7 @@
 <div class="flex flex-col items-center justify-between h-screen text-white">
     <header class="flex justify-between w-full pt-2 pl-6 pr-6 pb-6">
         <div class="flex items-center">
-            <img src="{{ asset('logos/gggithub.png') }}" alt="DevRos logo" class="w-10 h-10">
-            <span class="text-xl font-bold ml-4">dhippo</span>
+            <span class="ml-4">dhippo</span>
         </div>
         <nav class=" flex items-center">
             <a href="#" class="text-white p-2 underline">Build the future</a>
