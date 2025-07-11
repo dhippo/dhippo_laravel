@@ -6,6 +6,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sport', function () {
-    return view('sport');
-});
+Route::get('/sport', [App\Http\Controllers\SportController::class, 'index']);
