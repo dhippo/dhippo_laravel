@@ -7,15 +7,52 @@ use Carbon\Carbon;
 
 class Planning extends Component
 {
-    /** @var array */
-    public $planning;
+    /**
+     * Tableau du planning courant.
+     */
+    public array $planning;
+
+    /**
+     * Titre indiquant la période de la semaine.
+     */
+    public string $weekTitle;
+
+    /**
+     * Numéro de la semaine précédente ou null.
+     */
+    public ?int $prevWeek;
+
+    /**
+     * Numéro de la semaine suivante ou null.
+     */
+    public ?int $nextWeek;
 
     public function __construct()
     {
-        // 1. Construire le planning statique
+        // Déterminer la semaine sélectionnée
+        $selectedWeek = request()->integer('week');
+        if (!$selectedWeek) {
+            $day = Carbon::now()->day;
+            $selectedWeek = ($day >= 14 && $day <= 20) ? 2 : 1;
+        }
+
+        $monday = $selectedWeek === 2 ? 14 : 7;
+
+        $this->weekTitle = "du {$monday} au " . ($monday + 6) . ' juillet';
+        $this->prevWeek = $selectedWeek === 2 ? 1 : null;
+        $this->nextWeek = $selectedWeek === 1 ? 2 : null;
+
+        $this->planning = $this->buildWeek($monday);
+    }
+
+    /**
+     * Construit le planning pour une semaine dont le lundi est au jour donné.
+     */
+    private function buildWeek(int $startDay): array
+    {
         $p = [
             'Lundi' => [
-                'date'       => '7 juillet',
+                'date'       => $startDay . ' juillet',
                 'events'     => [[
                     'icon'      => '🏊‍♂️',
                     'label'     => '2km',
@@ -28,7 +65,7 @@ class Planning extends Component
                 'date_color' => 'text-blue-200',
             ],
             'Mardi' => [
-                'date'       => '8 juillet',
+                'date'       => ($startDay + 1) . ' juillet',
                 'events'     => [[
                     'icon'      => '💤',
                     'label'     => 'Repos',
@@ -41,7 +78,7 @@ class Planning extends Component
                 'date_color' => 'text-gray-300',
             ],
             'Mercredi' => [
-                'date'       => '9 juillet',
+                'date'       => ($startDay + 2) . ' juillet',
                 'events'     => [
                     [
                         'icon'      => '🏋️‍♂️',
@@ -65,9 +102,8 @@ class Planning extends Component
                 'date_color' => 'text-green-200',
             ],
             'Jeudi' => [
-                'date'       => '10 juillet',
+                'date'       => ($startDay + 3) . ' juillet',
                 'events'     => [[
-                    // 🏃‍♂️ 8 km
                     'icon'      => '🏃‍♂️',
                     'label'     => '8km',
                     'bg'        => 'bg-gradient-to-r from-yellow-500 to-orange-500',
@@ -81,10 +117,9 @@ class Planning extends Component
             ],
         ];
 
-        // 2. Vendredi–Dimanche, avec Samedi en natation
-        foreach (['Vendredi'=>'11 juillet','Samedi'=>'12 juillet','Dimanche'=>'13 juillet'] as $day=>$date) {
+        foreach (['Vendredi','Samedi','Dimanche'] as $index => $day) {
+            $date = ($startDay + 4 + $index) . ' juillet';
             if ($day === 'Samedi') {
-                // Samedi : Objectif 2km de natation
                 $p[$day] = [
                     'date'       => $date,
                     'events'     => [[
@@ -99,7 +134,6 @@ class Planning extends Component
                     'date_color' => 'text-blue-200',
                 ];
             } else {
-                // Vendredi et Dimanche = repos
                 $p[$day] = [
                     'date'       => $date,
                     'events'     => [[
@@ -116,14 +150,13 @@ class Planning extends Component
             }
         }
 
-        // 3. Détection du jour courant et sur­écriture si “aujourd’hui”
-        $todayName = ucfirst(
-            Carbon::now()->locale('fr')->isoFormat('dddd')
-        );
+        $today = Carbon::now();
+        $inWeek = $today->month == 7 && $today->day >= $startDay && $today->day <= ($startDay + 6);
+        $todayName = ucfirst($today->locale('fr')->isoFormat('dddd'));
+
         foreach ($p as $day => &$data) {
-            $data['today'] = ($day === $todayName);
+            $data['today'] = $inWeek && ($day === $todayName);
             if ($data['today']) {
-                // Aujourd’hui : muscu “pecs”
                 $data['events'] = [[
                     'icon'      => '🏋️‍♂️',
                     'label'     => 'pecs',
@@ -137,7 +170,7 @@ class Planning extends Component
         }
         unset($data);
 
-        $this->planning = $p;
+        return $p;
     }
 
     public function render()
@@ -145,3 +178,4 @@ class Planning extends Component
         return view('components.planning');
     }
 }
+
