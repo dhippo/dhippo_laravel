@@ -1,7 +1,19 @@
 <div class="bg-white/5 backdrop-blur-lg rounded-3xl p-10 border border-white/10 shadow-2xl w-full mx-auto">
-    <h2 class="text-5xl font-extrabold text-white text-center mb-12">
-        Mon planning du 7 au 13 juillet
-    </h2>
+    <div class="flex items-center justify-between mb-6">
+        @if($prevWeek)
+            <a href="?week={{ $prevWeek }}" class="text-white text-3xl hover:text-yellow-300">&larr;</a>
+        @else
+            <span></span>
+        @endif
+        <h2 class="text-5xl font-extrabold text-white text-center">
+            Mon planning {{ $weekTitle }}
+        </h2>
+        @if($nextWeek)
+            <a href="?week={{ $nextWeek }}" class="text-white text-3xl hover:text-yellow-300">&rarr;</a>
+        @else
+            <span></span>
+        @endif
+    </div>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         @foreach($planning as $day => $data)
