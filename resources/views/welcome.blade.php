@@ -1,302 +1,186 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hippolyte Durand - Alternance Data & IA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hippolyte Durand — Data & AI Apprentice @ SNCF</title>
+    <meta name="description" content="Hippolyte Durand — Data & AI apprentice at SNCF. Built an MCP with RAG at Tetra7, an SQL-capable AI agent, and a document classifier. Seeking a 3-month internship (May–July 2026).">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans">
+<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased">
+<div class="z-0 absolute inset-x-0 transform-gpu overflow-hidden blur-2xl" aria-hidden="true">
+    <div class="relative left-[calc(50%-9rem)] aspect-[1155/678] w-[36.125rem] rotate-[30deg]
+            bg-orange-300 from-orange-300 to-orange-300 opacity-40
+            sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+         style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+</div>
+<!-- Header / Hero -->
+<header class="border-b border-gray-100 dark:border-gray-800 z-50">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-14">
+        <div class="flex flex-col items-center text-center">
+            <!-- Optional avatar -->
+            <!-- <img src="/images/avatar.jpg" alt="Hippolyte Durand" class="w-20 h-20 rounded-full ring-1 ring-gray-200 dark:ring-gray-700 mb-6"> -->
 
-<header class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white py-8 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-        <!-- PHOTO DE PROFIL (optionnelle) -->
-        <!-- <img src="ton-image.jpg" alt="Photo de Hippolyte" class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-white shadow-lg" /> -->
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight">
+                Hippolyte Durand
+            </h1>
 
-        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight uppercase">Hippolyte Durand</h1>
+            <p class="mt-3 text-lg text-gray-600 dark:text-gray-300">
+                Data & AI Apprentice @ SNCF • ECE Paris (Ingénieur cycle)
+            </p>
 
-        <p class="mt-4 text-xl md:text-2xl font-medium text-white/90">
-            Ingénieur Junior spécialisé en Data & IA
-        </p>
+            <p class="mt-6 max-w-3xl text-base md:text-lg text-gray-700 dark:text-gray-300 z-40">
+                I design pragmatic AI systems, from retrieval-augmented pipelines to autonomous agents that can speak SQL.
+                Previously at <span class="font-medium">Tetra7</span>, I implemented a lightweight <span class="font-medium">Model Context Protocol (MCP)</span> setup: an MCP server exposing <em>tools</em>, <em>resources</em>, and <em>prompts</em> to the model client.
+                I paired it with <span class="font-medium">RAG</span> (embeddings + vector search), a schema-aware <span class="font-medium">SQL agent</span> for safe, read-only queries, and a production-grade <span class="font-medium">document classifier</span>.
+                I’m currently an apprentice at <span class="font-medium">SNCF Voyageurs</span> and I’m seeking a <span class="font-semibold">3-month internship (May–July 2026)</span>.
 
-        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-         <span class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wider animate-bounce">
-  🎯 En recherche d'alternance
-</span>
-                <span class="inline-block bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium">
-            1 mois école / 1 mois entreprise
-          </span>
-            <span class="inline-block bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium">
-            dès septembre 2025
-          </span>
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-3  z-40">
+                  <span class="inline-flex items-center gap-2 rounded-full border border-emerald-500 dark:border-gray-800 px-3 py-1 text-sm">
+                    <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"></span> Available May–July 2026
+                  </span>
+                        <span class="inline-flex items-center gap-2 rounded-full border border-white dark:border-gray-800 px-3 py-1 text-sm">
+                    Apprenticeship @ SNCF
+                  </span>
+                        <span class="inline-flex items-center gap-2 rounded-full border border-gray-400 dark:border-gray-800 px-3 py-1 text-sm">
+                    MCP • RAG • SQL Agent • Classifier
+                  </span>
+            </div>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4 z-40">
+                <a href="mailto:durandhippolyte@gmail.com" class="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-900">
+                    Contact
+                </a>
+                <a href="https://github.com/dhippo" target="_blank" class="inline-flex items-center rounded-md bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-4 py-2 text-sm font-semibold hover:opacity-90">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/hippolyte-d-2a03b32b3/" target="_blank" class="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-900">
+                    LinkedIn
+                </a>
+            </div>
         </div>
     </div>
 </header>
 
-<section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
-    <!-- Carte Présentation -->
-    <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-        <h2 class="text-2xl font-bold mb-4">👋 <span class="ml-2">Présentation</span></h2>
-        <div class="space-y-4 text-gray-700 dark:text-gray-300">
-            <div class="flex items-center gap-3">
-                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5"
-                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zM6 20v-1a4 4 0 014-4h4a4 4 0 014 4v1" />
-                </svg>
-                <span>23 ans · Paris · Permis B</span>
-            </div>
-            <div class="flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500" >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
-                </svg>
-                <span>durandhippolyte@gmail.com</span>
-            </div>
-            <div class="flex items-center gap-3">
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
-                </svg>
-
-                <span>06 14 36 49 31</span>
-            </div>
-            <p class="pt-4 text-sm leading-relaxed">
-                Après une année en Australie où j’ai amélioré mon anglais, je reprends mes études d’ingénieur à l’ECE avec
-                l’ambition de m’investir dans un projet Data. Mon objectif : analyser, comprendre et résoudre des problématiques
-                complexes grâce aux nouvelles technologies.
+<!-- Key Highlights -->
+<section class="max-w-6xl mx-auto px-6 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">What can I do ?</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <!-- Card -->
+        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5 z-40">
+            <h3 class="font-semibold">Model Context Protocol (MCP) orchestration + RAG</h3>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                Built an <strong>MCP</strong> server that advertises <em>tools</em>, <em>resources</em>, and <em>prompts</em> to an MCP client with
+                capabilities. Implemented tool discovery. Integrated a <strong>RAG</strong>
+                layer (embeddings + vector index) to serve contextual resources, enabling the agent to select and invoke the right tool per request.
             </p>
         </div>
-    </div>
 
-    <!-- Carte Formation -->
-    <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-        <h2 class="text-2xl font-bold mb-4">🎓 <span class="ml-2">Formation</span></h2>
-        <div class="space-y-4 text-gray-700 dark:text-gray-300">
-
-            <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-yellow-500 mt-1" fill="none" stroke="currentColor" stroke-width="1.5"
-                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M9.75 17.25L3 21V3h18v18l-6.75-3.75-3 2.25-3-2.25z" />
-                </svg>
-                <div>
-                    <p><strong>2024 - 2025 :</strong> Année de césure en Australie</p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Sydney, Melbourne, Tasmanie, Brisbane</p>
-                </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-purple-500 mt-1" fill="none" stroke="currentColor" stroke-width="1.5"
-                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M12 14l9-5-9-5-9 5 9 5z" />
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.75 12.083 12.083 0 015.84 10.578L12 14z" />
-                </svg>
-                <div>
-                    <p><strong>2021 - 2024 :</strong> Bachelor Data & Software Engineer</p>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">ECE Paris · Alternance</p>
-                </div>
-            </div>
-
+        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 class="font-semibold">Laravel + Livewire Dashboards & APIs</h3>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                Built <strong>clean</strong> Laravel backends with RESTful endpoints, request validation, policies, and expressive Eloquent relations.
+                Shipped Livewire dashboards with server-driven interactions, eager-loaded metrics, and background <strong>queues</strong> (Redis) for long-running jobs.
+                Added caching and structured logs to keep p95 fast and debugging predictable.
+            </p>
         </div>
+
+        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 class="font-semibold">Document Classifier</h3>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                Production classifier for industry documents with robust PDF/text parsing, field normalization, and calibrated confidence scores.
+                Added an evaluation harness (stratified sets, error breakdowns) and simple <strong>thresholding</strong> to balance precision/recall.
+                Exposed the model behind an HTTP endpoint with idempotent requests and audit trails for reliable ops.
+            </p>
+        </div>
+
     </div>
 </section>
 
-<section class="bg-gray-100 dark:bg-gray-800 py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">💼 <span class="ml-2">Expériences professionnelles</span></h2>
+<!-- Experience -->
+<section class="bg-gray-50 dark:bg-gray-900/40 border-y border-gray-100 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Experience</h2>
 
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Carte 1 -->
-            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-                <div class="flex items-center mb-4 gap-3">
-                    <svg class="w-7 h-7 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5"
-                         viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.75 12.083 12.083 0 015.84 10.578L12 14z" />
-                    </svg>
-                    <div>
-                        <h3 class="font-semibold text-lg">The Quantic Factory</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">Alternance · 2024 · 8 mois</p>
-                    </div>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+            <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                <div class="flex items-baseline justify-between">
+                    <h3 class="font-semibold">SNCF Voyageurs — Apprentice (Data & AI)</h3>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">2025–2028</span>
                 </div>
-                <p class="text-gray-700 dark:text-gray-300 text-sm">
-                    Implémentation IA sur Shopify & Klaviyo<br>
-                    Coordination d’équipe interfonctionnelle<br>
-                    Participation technique au backend Go
+                <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                    AMOA within the SI Essieux (DSI Matériel). Bridging business needs and data/AI features, writing specs, and
+                    aligning stakeholders around reliable, auditable solutions.
                 </p>
             </div>
 
-            <!-- Carte 2 -->
-            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-                <div class="flex items-center mb-4 gap-3">
-                    <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5"
-                         viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 14l6-6m0 0v5.25A2.25 2.25 0 0112.75 15H7.5a2.25 2.25 0 01-2.25-2.25V9" />
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M12 4.5v6M9 7.5h6" />
-                    </svg>
-                    <div>
-                        <h3 class="font-semibold text-lg">IDLA</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">Alternance · 2023 · 4 mois</p>
-                    </div>
+            <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                <div class="flex items-baseline justify-between">
+                    <h3 class="font-semibold">Tetra7 — AI Engineer (Projects)</h3>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">2024–2025</span>
                 </div>
-                <p class="text-gray-700 dark:text-gray-300 text-sm">
-                    Dev Front-End avec NextJS & Mapbox<br>
-                    Optimisation API & automatisation Zapier / Pipedrive
-                </p>
-            </div>
-
-            <!-- Carte 3 -->
-            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-                <div class="flex items-center mb-4 gap-3">
-                    <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" stroke-width="1.5"
-                         viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9.75 17.25L3 21V3h18v18l-6.75-3.75-3 2.25-3-2.25z" />
-                    </svg>
-                    <div>
-                        <h3 class="font-semibold text-lg">Emmaüs</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">Bénévolat · Été 2022</p>
-                    </div>
-                </div>
-                <p class="text-gray-700 dark:text-gray-300 text-sm">
-                    Vente en librairie, tri de livres, service en équipe<br>
-                    Engagement social et sens de l'organisation
-                </p>
+                <ul class="mt-2 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+                    <li>• MCP with RAG over internal docs and specs</li>
+                    <li>• SQL agent with schema-aware query planning</li>
+                    <li>• Document classifier with evaluation suite</li>
+                    <li>• Laravel + Livewire dashboards and APIs</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold text-center mb-10">🧠 <span class="ml-2">Compétences techniques</span></h2>
-
-    <div class="grid md:grid-cols-3 gap-6">
-        <!-- Carte compétence -->
-        <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-            <div class="flex items-center gap-3 mb-3">
-
-                <img src=" {{ asset('logos/logo-laravel.webp') }}" alt="logo" class="w-8 h-8 text-purple-600"/>
-                <h3 class="font-semibold">Laravel</h3>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-                Dev complet · Auth, files (S3), APIs LLM (OpenAI, Claude), tâches asynchrones
+<!-- Skills -->
+<section class="max-w-6xl mx-auto px-6 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Skills</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 class="font-semibold">Backend & Data</h3>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                Laravel, PHP, Python, FastAPI, SQL (MySQL/PostgreSQL), ClickHouse basics, Redis, queues.
             </p>
         </div>
-
-        <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-            <div class="flex items-center gap-3 mb-3">
-                <img src=" {{ asset('logos/logo-plesk2.png') }}" alt="logo" class="w-8 h-8 text-purple-600"/>
-
-                <h3 class="font-semibold">Plesk</h3>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-                Déploiement rapide · Webhooks GitHub · BDD & hébergement web
+        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 class="font-semibold">AI & Retrieval</h3>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                RAG pipelines, embeddings, vector search, prompt design, evaluation, lightweight agents.
             </p>
         </div>
-
-        <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-            <div class="flex items-center gap-3 mb-3">
-                <img src=" {{ asset('logos/logo-n8n.png') }}" alt="logo" class="w-8 h-8 text-purple-600"/>
-
-                <h3 class="font-semibold">Low-code</h3>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-                n8n · Zapier · Klaviyo — automatisations, intégration API, scénarios e-commerce
-            </p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-            <div class="flex items-center gap-3 mb-3">
-                <img src=" {{ asset('logos/python.png') }}" alt="logo" class="w-6 h-6 text-purple-600"/>
-
-                <h3 class="font-semibold">Scraping</h3>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-                Extraction automatisée de données en Python & PHP · Parsing structuré
-            </p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-            <div class="flex items-center gap-3 mb-3">
-                <img src=" {{ asset('logos/docker.png') }}" alt="logo" class="w-8 h-8 text-purple-600"/>
-
-                <h3 class="font-semibold">Docker</h3>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-                Isolation et conteneurisation d’environnements · Déploiement scalable
-            </p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-            <div class="flex items-center gap-3 mb-3">
-                <img src=" {{ asset('logos/react.png') }}" alt="logo" class="w-6 h-6 text-purple-600"/>
-
-                <h3 class="font-semibold">React Native</h3>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-                Dev mobile avec Expo · Auth Firebase · Intégration IA OpenAI
+        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 class="font-semibold">Ops & Tooling</h3>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                Docker, Plesk, Herd, GitHub Actions, monitoring and structured logging.
             </p>
         </div>
     </div>
 </section>
 
-<section class="bg-gray-100 dark:bg-gray-800 py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-10 text-center">🚀 <span class="ml-2">Projets marquants</span></h2>
-
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Carte projet -->
-            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
-                <h3 class="font-semibold text-lg mb-2">HirePower (2025)</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-300">
-                    Plateforme Laravel de recrutement & scoring IA (LLM)<br>
-                    UI/UX moderne avec Tailwind + Livewire
-                </p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
-                <h3 class="font-semibold text-lg mb-2">Fondation Brigitte Bardot Junior (2025)</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-300">
-                    Site vitrine + partie admin pour la gestion du contenu<br>
-                    Formulaire sécurisé avec inscription et vérification d’email
-                </p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
-                <h3 class="font-semibold text-lg mb-2">QuanticFlow (2024)</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-300">
-                    Personnalisation email Klaviyo selon comportements<br>
-                    Tracking avancé Shopify & analyse de performance
-                </p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
-                <h3 class="font-semibold text-lg mb-2">Appli mobile IA (2023)</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-300">
-                    App React Native avec personnages IA génératifs<br>
-                    Authentification Firebase · UI conversationnelle
-                </p>
-            </div>
+<!-- Contact / CTA -->
+<section class="bg-gray-50 dark:bg-gray-900/40 border-t border-gray-100 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-14 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Open to a 3-month internship (May–July 2026)</h2>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+            Paris or remote. I value clear specs, measurable outcomes, and fast feedback loops.
+        </p>
+        <div class="mt-7 flex items-center justify-center gap-4">
+            <a href="mailto:durandhippolyte@gmail.com" class="inline-flex items-center rounded-md bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-4 py-2 text-sm font-semibold hover:opacity-90">
+                Get in touch
+            </a>
+            <a href="https://dhippo.fr" target="_blank" class="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-900">
+                Portfolio
+            </a>
         </div>
+        <p class="mt-6 text-xs text-gray-500">
+            Also on <a class="underline hover:no-underline" target="_blank" href="https://github.com/dhippo">GitHub</a> and
+            <a class="underline hover:no-underline" target="_blank" href="https://linkedin.com/in/hippolyte-d-2a03b32b3/">LinkedIn</a>.
+        </p>
     </div>
 </section>
 
-<footer class="py-10 text-center">
-    <h2 class="text-xl font-bold mb-4">Liens utiles</h2>
-    <div class="flex justify-center space-x-6 text-blue-600 dark:text-blue-400">
-        <a href="https://dhippo.fr" target="_blank" class="underline">dhippo.fr</a>
-        <a href="https://github.com/dhippo" target="_blank" class="underline">GitHub</a>
-        <a href="https://linkedin.com/in/hippolyte-d-2a03b32b3/" target="_blank" class="underline">LinkedIn</a>
-        <a href="https://hirepower.fr" target="_blank" class="underline">HirePower</a>
-    </div>
-    <p class="mt-6 text-sm text-gray-500">&copy; 2025 Hippolyte Durand</p>
+<footer class="py-10 text-center text-sm text-gray-500">
+    © 2025 Hippolyte Durand
 </footer>
-
 </body>
 </html>
